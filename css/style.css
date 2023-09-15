@@ -1,0 +1,246 @@
+@font-face {
+  font-family: JetBrains;
+  src: url(../font/JetBrainsMono-Regular.ttf);
+}
+
+:root {
+  --primaryColor: #0984c0;
+  --blackAccent: #111;
+  --whiteAccent: #666;
+  --blackBack: #121212;
+  --whiteBack: #f7f7f7;
+  --textBlack: #333;
+
+  --maxWidth: 992px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: JetBrains, sans-serif;
+}
+body {
+  color: var(--whiteAccent);
+  background-color: var(--whiteBack);
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--textBlack);
+  margin: 0;
+}
+h2 {
+  font-weight: 400;
+}
+a {
+  color: var(--textBlack);
+  outline: 0;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:focus {
+  outline: 0;
+}
+
+::selection {
+  color: var(--whiteBack);
+  background: var(--primaryColor);
+}
+::-moz-selection {
+  color: var(--whiteBack);
+  background: var(--primaryColor);
+}
+
+/* Reset default button styles */
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Style for the black and white button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.btn-white {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.btn-white:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+.btn-black {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+.btn-black:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+
+.d-flex {
+  display: flex;
+}
+.pointer {
+  cursor: pointer;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+.bg {
+  background-color: #0984c0;
+}
+.mt {
+  margin-top: 10px;
+}
+
+@media (max-width: 576px) {
+  .text-center-m {
+    text-align: center;
+  }
+  .hide-mobile {
+    display: none;
+  }
+}
+
+/* header **************************************/
+.header-wrapper {
+  max-width: var(--maxWidth);
+  margin-left: auto;
+  margin-right: auto;
+}
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  padding-left: 10px;
+  margin: 4px;
+}
+.dp {
+  height: 44px;
+  margin: 0 2px 0 6px;
+}
+.subtitle {
+  font-size: 12px;
+  color: var(--primaryColor);
+}
+.menu {
+  margin: 4px;
+  border: 0.5px solid black;
+  max-width: calc(var(--maxWidth) / 2.5);
+}
+.menu-item {
+  padding: 4px 4px 4px 40px;
+  border: 0.5px solid black;
+  cursor: pointer;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    height: 0;
+    display: none;
+  }
+  to {
+    opacity: 1;
+    height: 162px;
+    display: block;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    height: 162px;
+    display: block;
+  }
+  to {
+    opacity: 0;
+    height: 0;
+    display: none;
+  }
+}
+.hide-menu {
+  animation: fadeOut 0.5s ease-in-out;
+  opacity: 0;
+  height: 0;
+  display: none;
+}
+.show-menu {
+  animation: fadeIn 0.5s ease-in-out;
+  opacity: 1;
+  height: 162px;
+  display: block;
+}
+@media (max-width: 576px) {
+  .menu {
+    max-width: 100%;
+  }
+}
+
+/* content **************************************/
+.content-wrapper {
+  max-width: var(--maxWidth);
+  margin-left: auto;
+  margin-right: auto;
+}
+.content {
+  margin: 0 4px;
+}
+
+/* myself **************************************/
+.m-topbar {
+  text-align: end;
+  padding: 8px;
+}
+.m-img-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.m-hero {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+}
+
+@media (max-width: 576px) {
+  .m-topbar {
+    text-align: center;
+  }
+  .m-hero {
+    display: block;
+    padding: 4px;
+  }
+  .m-btn-container {
+    text-align: center;
+  }
+}
