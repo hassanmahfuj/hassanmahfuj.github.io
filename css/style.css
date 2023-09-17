@@ -162,7 +162,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
+  border: 0.5px solid black;
   padding-left: 10px;
   margin: 4px;
 }
@@ -177,11 +177,13 @@ button {
 .menu {
   margin: 4px;
   max-width: calc(var(--maxWidth) / 2.5);
+  display: none;
 }
 .menu-item {
   padding: 4px 4px 4px 40px;
   border: 0.5px solid black;
   cursor: pointer;
+  margin-top: 4px;
 }
 @keyframes fadeIn {
   from {
