@@ -281,6 +281,85 @@ button {
   }
 }
 
+/* portfolio **************************************/
+.p-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p-chip-container {
+  display: flex;
+  gap: 5px;
+}
+.p-chip {
+  color: black;
+  border: 0.5px solid black;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.p-chip:hover {
+  background-color: black;
+  color: white;
+}
+.p-chip-active {
+  background-color: black;
+  color: white;
+}
+.p-content-container {
+  margin-top: 4px;
+  display: flex;
+  justify-content: center;
+}
+.p-content {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.p-item {
+  margin-top: 50px;
+  width: calc(var(--maxWidth) / 1.2);
+}
+.p-item-even {
+  margin-top: 50px;
+  align-self: end;
+}
+.p-item-start {
+  max-width: calc(var(--maxWidth) / 2.2);
+}
+.p-item-end {
+  max-width: calc(var(--maxWidth) / 2.2);
+}
+.p-item-even .p-item-start {
+  align-self: end;
+}
+.p-item-even .p-item-end {
+  align-self: end;
+  text-align: end;
+}
+
+@media (max-width: 576px) {
+  .p-top-container {
+    display: block;
+  }
+  .p-chip-container {
+    margin-top: 10px;
+  }
+  .p-content {
+    display: block;
+  }
+  .p-item {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .p-item-start {
+    width: 100%;
+  }
+  .p-item-end {
+    width: 100%;
+  }
+}
+
 /* contact **************************************/
 .c-flex {
   display: flex;
