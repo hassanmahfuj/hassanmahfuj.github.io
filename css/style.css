@@ -169,6 +169,7 @@ button {
 .dp {
   height: 44px;
   margin: 0 2px 0 6px;
+  filter: grayscale(100%);
 }
 .subtitle {
   font-size: 12px;
@@ -238,6 +239,13 @@ button {
 }
 
 /* myself **************************************/
+.m-image {
+  filter: grayscale(100%);
+  transition: all 0.5s;
+}
+.m-image:hover {
+  filter: none;
+}
 .m-topbar {
   text-align: end;
   padding: 8px;
