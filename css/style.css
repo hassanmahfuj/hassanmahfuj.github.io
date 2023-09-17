@@ -272,3 +272,55 @@ button {
     text-align: center;
   }
 }
+
+/* contact **************************************/
+.c-flex {
+  display: flex;
+  /* background-color: #d6dadb; */
+}
+.c-start {
+  width: calc(var(--maxWidth) / 2);
+  margin-bottom: 10px;
+}
+.c-end {
+  width: 100%;
+}
+.c-end h1 {
+  color: var(--textBlack);
+  font-weight: 400;
+}
+.c-horizontal-divider {
+  border: 0;
+  margin: 30px 0;
+  background-color: black;
+  padding: 0.1px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 0.5px solid #ccc;
+  font-size: 16px;
+}
+.form-group textarea {
+  resize: vertical;
+}
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+  border: 0.5px solid black;
+  outline: none;
+}
+@media (max-width: 576px) {
+  .c-flex {
+    display: block;
+  }
+}

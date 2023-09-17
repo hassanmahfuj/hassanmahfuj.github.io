@@ -5,7 +5,7 @@ const route = (path) => {
 
 const routes = {
   404: "/page/404.html",
-  "/": "/page/myself.html",
+  "/": "/page/contact.html",
   "/index.html": "/page/myself.html",
   "/skill": "/page/skill.html",
   "/portfolio": "/page/portfolio.html",
