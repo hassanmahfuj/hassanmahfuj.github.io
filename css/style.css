@@ -106,20 +106,40 @@ button {
 .d-flex {
   display: flex;
 }
+.horizontal-center {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.horizontal-divider {
+  margin: 0 20px;
+  padding: 1px;
+  background-color: var(--whiteAccent);
+  border: 0;
+}
 .pointer {
   cursor: pointer;
 }
 .text-center {
   text-align: center;
 }
+.text-end {
+  text-align: end;
+}
 .text-justify {
   text-align: justify;
+}
+.w-100 {
+  width: 100%;
 }
 .bg {
   background-color: #0984c0;
 }
 .mt {
   margin-top: 10px;
+}
+.gap {
+  margin-top: 50px;
 }
 
 @media (max-width: 576px) {
@@ -156,7 +176,6 @@ button {
 }
 .menu {
   margin: 4px;
-  border: 0.5px solid black;
   max-width: calc(var(--maxWidth) / 2.5);
 }
 .menu-item {
@@ -230,6 +249,13 @@ button {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 20px;
+}
+.m-icon {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: black;
+  fill: white;
 }
 
 @media (max-width: 576px) {
