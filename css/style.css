@@ -194,14 +194,14 @@ button {
   }
   to {
     opacity: 1;
-    height: 162px;
+    height: 132px;
     display: block;
   }
 }
 @keyframes fadeOut {
   from {
     opacity: 1;
-    height: 162px;
+    height: 132px;
     display: block;
   }
   to {
@@ -219,7 +219,7 @@ button {
 .show-menu {
   animation: fadeIn 0.5s ease-in-out;
   opacity: 1;
-  height: 162px;
+  height: 132px;
   display: block;
 }
 @media (max-width: 576px) {
