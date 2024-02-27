@@ -16,6 +16,10 @@ const handleLocation = async () => {
   const route = routes[path] || routes[404];
   const html = await fetch(route).then((data) => data.text());
   document.getElementById("content").innerHTML = html;
+
+  if (path === "/portfolio") {
+    routeToPortfolio();
+  }
 };
 
 window.onpopstate = handleLocation;
