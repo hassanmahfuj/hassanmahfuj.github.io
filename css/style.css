@@ -283,12 +283,14 @@ button {
 
 /* portfolio **************************************/
 .p-top-container {
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .p-chip-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 5px;
 }
 .p-chip {
